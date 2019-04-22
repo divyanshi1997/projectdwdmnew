@@ -1,0 +1,60 @@
+<div>
+<form name="form-signin" class="form-signin" action="/">
+        <div class="text-center mb-4">            
+            <!-- <img class="mb-4" src="/docs/4.2/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72"> -->
+            <p class="mb-3 display-4">CDOT-DWDM</p>        
+            <p class="">
+              DWDM performance analysis tool with interactive network topology.
+            </p>        
+            </div>
+            
+    <div class="form-label-group"  >
+      <input
+        name="username"
+        type="text"
+        id="username"
+       class="form-control" 
+        placeholder="Username"
+        ng-model="username"
+        required
+        autofocus
+      />
+      <label for="username">User Name</label>
+    </div>
+
+    <div class="form-label-group">
+      <input
+        name="password"
+        type="password"
+        id="password"
+        class="form-control"
+        placeholder="Password"
+        ng-model="password"
+        required
+      />
+      <label for="password">Password</label>
+    </div>
+    <div class="form-label-group" >
+      <input
+        name="ipaddress"
+        type="text"
+        id="ipaddress"
+        class="form-control"
+        placeholder="ip address"
+        ng-model="ipAdd"
+        required
+        pattern="((^|\.)((25[0-5])|(2[0-4]\d)|(1\d\d)|([1-9]?\d))){4}$"
+      />
+      <label for="ipaddress">IP Address</label>
+    </div>
+
+    <div class="checkbox mb-3">
+      <label>
+        <input type="checkbox" value="remember-me" /> Remember me
+      </label>
+    </div>
+     <button class="btn btn-lg btn-primary btn-block"   type="button" ng-click="submitForm()"> 
+       Sign in
+      </button>
+    </div>
+  </form>

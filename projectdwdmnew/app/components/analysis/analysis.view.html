@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="DWDM analysis tool" />
+    <meta name="generator" content="Jekyll v3.8.5" />
+    <title>DWDM Performance Analysis</title>
+
+    <!-- Bootstrap core CSS -->
+    <link
+      href="assets/css/bootstrap/bootstrap.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/css/rappid/rappid.css"
+    />
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link
+      href="assets/css/bootstrap/sticky-footer-navbar.css"
+      rel="stylesheet"
+    />
+    <link href="assets/css/bootstrap/offcanvas.css" rel="stylesheet" />
+    <link href="assets/css/home.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+      crossorigin="anonymous"
+    />
+    <script src="assets/lib/angular.min.js"></script>
+    <script src="assets/lib/angular-route.js"></script>
+  </head>
+  <body class="d-flex flex-column h-100">
+    <header>
+      <!-- Fixed navbar -->
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="#">DPT</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarCollapse"
+          aria-controls="navbarCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="home/home.html"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Analysis</a></li>
+            <!-- <li class="nav-item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li> -->
+          </ul>
+          <form class="form-inline mt-2 mt-md-0">
+            <input
+              class="form-control mr-sm-2"
+              type="text"
+              placeholder="Enter Node IP"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+              Change Node
+            </button>
+          </form>
+        </div>
+      </nav>
+      <div
+        class="nav-scroller bg-white shadow-sm d-flex justify-content-center"
+      >
+        <nav class="nav nav-underline">
+          <a class="nav-link" href="#"><i class="fas fa-search-plus"></i></a>
+          <!-- <a class="nav-link" href="#">
+            Friends
+            <span class="badge badge-pill bg-light align-text-bottom">27</span>
+          </a> -->
+          <a class="nav-link" href="#"><i class="fas fa-search-minus"></i></a>
+          <a class="nav-link" href="#"><i class="fas fa-align-center"></i></a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Begin page content -->
+    <main role="main" class="flex-shrink-0 ">
+      <div class="container-fluid"><div id="canvas" class="border"></div></div>
+    </main>
+
+    <!-- <footer class="footer mt-auto py-3">
+      <div class="container">
+        <span class="text-muted">Place sticky footer content here.</span>
+      </div>
+    </footer> -->
+    <!--<script>
+      var app = angular.module("myApp", ["ngRoute"]);
+      app.config(function($routeProvider) {
+        $routeProvider
+
+          .when("/home", {
+            templateUrl: "home.html"
+          })
+          .when("/analysis", {
+            templateUrl: "analysis.html"
+          });
+      });
+    </script>-->
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/lodash.js"></script>
+    <script src="assets/js/backbone.js"></script>
+    <script src="assets/js/rappid.js"></script>
+  </body>
+</html>

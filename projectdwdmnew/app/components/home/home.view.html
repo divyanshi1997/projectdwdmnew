@@ -1,0 +1,108 @@
+<div class="d-flex flex-column h-100 home-view" ng-controller="HomeController">
+  <header>
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <a class="navbar-brand" href="#">DPT</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarCollapse"
+        aria-controls="navbarCollapse"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="analysis.html">Analysis</a>
+          </li>
+          <!-- <li class="nav-item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li> -->
+        </ul>
+       
+        <form class="form-inline mt-2 mt-md-0" action="/getnetwork1">
+          <input
+            class="form-control mr-sm-2"
+            name="ipaddress"
+            id="ipaddress"
+            type="text"
+            placeholder="Enter Node IP"
+            aria-label="Search"
+            ng-model="changeip"
+            pattern="((^|\.)((25[0-5])|(2[0-4]\d)|(1\d\d)|([1-9]?\d))){4}$"
+          />
+          <button class="btn btn-outline-success my-2 my-sm-0" type="button" ng-click="submitForm()">
+            Change Node
+          </button>
+        </form>
+      </div>
+    </nav>
+    <div class="nav-scroller bg-white shadow-sm d-flex justify-content-center">
+      <nav class="nav nav-underline">
+        <a class="nav-link" href="#"><i class="fas fa-search-plus"></i></a>
+        <a class="nav-link" href="#"><i class="fas fa-search-minus"></i></a>
+        <a class="nav-link" href="#"><i class="fas fa-align-center"></i></a>
+      </nav>
+    </div>
+   
+  </header>
+  
+    <!-- Begin page content -->
+    <main role="main" class="flex-shrink-0 ">
+      
+      <div
+        id="canvas"
+        class="border w-100"
+        ng-controller="PaperController"
+         
+      >
+      
+      </div>
+     
+    </main>
+
+    <!-- <footer class="footer mt-auto py-3">
+      <div class="container">
+        <span class="text-muted">Place sticky footer content here.</span>
+      </div>
+    </footer> -->
+
+    <div class="modal" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Title</h4>
+            <button type="button" class="close" data-dismiss="modal" >
+              &times;
+            </button>
+           
+
+          </div>
+    
+          <!-- Modal body -->
+          <div class="modal-body">            
+          </div>
+    
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal" ng-click="showModal=false" >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</div>
